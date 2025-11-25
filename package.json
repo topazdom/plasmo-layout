@@ -44,6 +44,14 @@
     "html-generation",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topazdom/plasmo-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/topazdom/plasmo-layout/issues"
+  },
+  "homepage": "https://github.com/topazdom/plasmo-layout#readme",
   "dependencies": {
     "@babel/parser": "^7.23.0",
     "@babel/traverse": "^7.23.0",
