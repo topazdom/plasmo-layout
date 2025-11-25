@@ -1,5 +1,5 @@
-import React from 'react';
-import { baseStyles, type BaseLayoutProps } from '../default';
+import React from 'react'
+import { baseStyles, type BaseLayoutProps } from '../default'
 
 /**
  * Onboarding tab styles that extend base styles
@@ -75,17 +75,17 @@ const onboardingStyles = `
     transform: translateY(-2px);
     box-shadow: 0 10px 20px -10px rgba(102, 126, 234, 0.5);
   }
-`;
+`
 
 export interface OnboardingLayoutProps extends BaseLayoutProps {
-  brandName?: string;
+  brandName?: string
 }
 
 /**
  * Onboarding layout - extends DefaultLayout with gradient background and card styling
  * Perfect for welcome/onboarding tab pages
  */
-export default function OnboardingLayout({ 
+export default function OnboardingLayout({
   title = 'Welcome',
   brandName = 'My Extension',
   children,
@@ -95,16 +95,16 @@ export default function OnboardingLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title} - {brandName}</title>
+        <title>
+          {title} - {brandName}
+        </title>
         <style dangerouslySetInnerHTML={{ __html: onboardingStyles }} />
       </head>
       <body>
         <div id="root">
-          <div className="onboarding-card">
-            {children}
-          </div>
+          <div className="onboarding-card">{children}</div>
         </div>
       </body>
     </html>
-  );
+  )
 }

@@ -11,7 +11,7 @@ export default function OnboardingTab() {
     <>
       <h1>Welcome!</h1>
       <p>Let's get you started with our extension.</p>
-      
+
       <div className="steps">
         <div className="step">
           <span className="step-number">1</span>
@@ -26,8 +26,8 @@ export default function OnboardingTab() {
           <span>Start using the extension!</span>
         </div>
       </div>
-      
+
       <button className="btn-primary">Get Started</button>
     </>
-  );
+  )
 }

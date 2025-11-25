@@ -1,28 +1,28 @@
-import { extname } from 'node:path';
-import type { BaseEngine, EngineContext } from '../types/index.js';
+import { extname } from 'node:path'
+import type { BaseEngine, EngineContext } from '../types/index.js'
 
 /**
  * Abstract base class for templating engines
  * Provides common functionality and enforces the engine interface
  */
 export abstract class AbstractEngine implements BaseEngine {
-  abstract readonly name: string;
-  abstract readonly extensions: string[];
+  abstract readonly name: string
+  abstract readonly extensions: string[]
 
   /**
    * Render a template to HTML
    * @param templatePath - Absolute path to the template file
    * @param context - Optional context data
    */
-  abstract render(templatePath: string, context?: EngineContext): Promise<string>;
+  abstract render(templatePath: string, context?: EngineContext): Promise<string>
 
   /**
    * Check if this engine can handle a given file based on extension
    * @param filePath - File path to check
    */
   canHandle(filePath: string): boolean {
-    const ext = extname(filePath).toLowerCase();
-    return this.extensions.includes(ext);
+    const ext = extname(filePath).toLowerCase()
+    return this.extensions.includes(ext)
   }
 
   /**
@@ -56,7 +56,7 @@ export function wrapInHtmlDocument(content: string, title = 'Plasmo Layout'): st
 <body>
   <div id="root">${content}</div>
 </body>
-</html>`;
+</html>`
 }
 
 /**
@@ -64,8 +64,8 @@ export function wrapInHtmlDocument(content: string, title = 'Plasmo Layout'): st
  * @param content - HTML content to check
  */
 export function isCompleteHtmlDocument(content: string): boolean {
-  const trimmed = content.trim().toLowerCase();
-  return trimmed.startsWith('<!doctype') || trimmed.startsWith('<html');
+  const trimmed = content.trim().toLowerCase()
+  return trimmed.startsWith('<!doctype') || trimmed.startsWith('<html')
 }
 
 /**
@@ -75,7 +75,7 @@ export function isCompleteHtmlDocument(content: string): boolean {
  */
 export function ensureHtmlDocument(content: string, title?: string): string {
   if (isCompleteHtmlDocument(content)) {
-    return content;
+    return content
   }
-  return wrapInHtmlDocument(content, title);
+  return wrapInHtmlDocument(content, title)
 }

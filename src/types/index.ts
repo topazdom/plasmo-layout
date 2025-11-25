@@ -1,11 +1,5 @@
 // Configuration types
-export type {
-  EngineType,
-  CustomEngine,
-  CustomEngineConfig,
-  PlasmoLayoutConfig,
-  ResolvedConfig,
-} from './config.js';
+export type { EngineType, CustomEngine, CustomEngineConfig, PlasmoLayoutConfig, ResolvedConfig } from './config.js'
 
 // Processor types
 export type {
@@ -15,12 +9,7 @@ export type {
   BuildSummary,
   WatchEventType,
   WatchEvent,
-} from './processor.js';
+} from './processor.js'
 
 // Engine types
-export type {
-  BaseEngine,
-  EngineContext,
-  EngineFactory,
-  EngineRegistryEntry,
-} from './engine.js';
+export type { BaseEngine, EngineContext, EngineFactory, EngineRegistryEntry } from './engine.js'

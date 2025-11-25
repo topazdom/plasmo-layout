@@ -25,7 +25,7 @@ export default function Options() {
           <input type="checkbox" defaultChecked />
         </div>
       </div>
-      
+
       <div className="options-section">
         <h2>API Configuration</h2>
         <div className="option-row">
@@ -36,8 +36,8 @@ export default function Options() {
           <input type="text" placeholder="Enter your API key" />
         </div>
       </div>
-      
+
       <button className="btn-save">Save Settings</button>
     </>
-  );
+  )
 }

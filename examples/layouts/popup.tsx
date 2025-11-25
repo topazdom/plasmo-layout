@@ -1,5 +1,5 @@
-import React from 'react';
-import DefaultLayout, { baseStyles, type BaseLayoutProps } from './default';
+import React from 'react'
+import DefaultLayout, { baseStyles, type BaseLayoutProps } from './default'
 
 /**
  * Popup-specific styles that extend base styles
@@ -35,20 +35,16 @@ const popupStyles = `
     font-size: 12px;
     color: #6b7280;
   }
-`;
+`
 
 export interface PopupLayoutProps extends BaseLayoutProps {
-  showFooter?: boolean;
+  showFooter?: boolean
 }
 
 /**
  * Popup layout - extends DefaultLayout with popup-specific dimensions and styles
  */
-export default function PopupLayout({ 
-  title = 'Extension Popup',
-  children,
-  showFooter = true,
-}: PopupLayoutProps) {
+export default function PopupLayout({ title = 'Extension Popup', children, showFooter = true }: PopupLayoutProps) {
   return (
     <html lang="en">
       <head>
@@ -60,13 +56,9 @@ export default function PopupLayout({
       <body>
         <div id="root">
           {children}
-          {showFooter && (
-            <div className="popup-footer">
-              Powered by Plasmo
-            </div>
-          )}
+          {showFooter && <div className="popup-footer">Powered by Plasmo</div>}
         </div>
       </body>
     </html>
-  );
+  )
 }

@@ -17,5 +17,5 @@ export default function Popup() {
         <button onClick={() => alert('Hello!')}>Click Me</button>
       </div>
     </>
-  );
+  )
 }

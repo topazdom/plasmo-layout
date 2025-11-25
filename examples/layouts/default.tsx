@@ -1,11 +1,11 @@
-import React, { type ReactNode } from 'react';
+import React, { type ReactNode } from 'react'
 
 /**
  * Base layout props interface - all layouts can extend this
  */
 export interface BaseLayoutProps {
-  title?: string;
-  children?: ReactNode;
+  title?: string
+  children?: ReactNode
 }
 
 /**
@@ -25,15 +25,12 @@ export const baseStyles = `
     width: 100%;
     min-height: 100vh;
   }
-`;
+`
 
 /**
  * Default base layout - other layouts can extend this
  */
-export default function DefaultLayout({ 
-  title = 'Plasmo Extension',
-  children 
-}: BaseLayoutProps) {
+export default function DefaultLayout({ title = 'Plasmo Extension', children }: BaseLayoutProps) {
   return (
     <html lang="en">
       <head>
@@ -46,5 +43,5 @@ export default function DefaultLayout({
         <div id="root">{children}</div>
       </body>
     </html>
-  );
+  )
 }

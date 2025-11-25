@@ -1,5 +1,5 @@
-import React from 'react';
-import { baseStyles, type BaseLayoutProps } from './default';
+import React from 'react'
+import { baseStyles, type BaseLayoutProps } from './default'
 
 /**
  * Options page styles that extend base styles
@@ -75,17 +75,17 @@ const optionsStyles = `
   .btn-save:hover {
     background: #2563eb;
   }
-`;
+`
 
 export interface OptionsLayoutProps extends BaseLayoutProps {
-  description?: string;
+  description?: string
 }
 
 /**
  * Options layout - extends DefaultLayout with settings-page styling
  * Perfect for extension options/settings pages
  */
-export default function OptionsLayout({ 
+export default function OptionsLayout({
   title = 'Options',
   description = 'Configure your extension settings',
   children,
@@ -108,5 +108,5 @@ export default function OptionsLayout({
         </div>
       </body>
     </html>
-  );
+  )
 }
