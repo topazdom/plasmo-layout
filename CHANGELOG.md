@@ -1,3 +1,8 @@
+## <small>1.0.3 (2025-11-25)</small>
+
+* fix: add GH_TOKEN to release step for semantic-release ([afacd63](https://github.com/topazdom/plasmo-layout/commit/afacd63))
+* fix: update Node.js version and improve Dockerfile configuration ([3e14119](https://github.com/topazdom/plasmo-layout/commit/3e14119))
+
 ## <small>1.0.2 (2025-11-25)</small>
 
 * fix: update Node.js version and command shell in docker-compose ([43c9afa](https://github.com/topazdom/plasmo-layout/commit/43c9afa))
