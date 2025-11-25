@@ -51,6 +51,8 @@
 npm install --save-dev plasmo-layout
 ```
 
+> **Note:** When installed as a dev dependency, use `npx plasmo-layout` to run commands. For global installation (`npm install -g plasmo-layout`), you can use `plasmo-layout` directly.
+
 ### Peer Dependencies
 
 Depending on which templating engine you use, install the corresponding peer dependency:
@@ -112,7 +114,7 @@ npm install edge.js
 Scan components and generate HTML files.
 
 ```bash
-plasmo-layout build [options]
+npx plasmo-layout build [options]
 
 Options:
   -c, --config <path>   Path to config file
@@ -125,7 +127,7 @@ Options:
 Watch for file changes and rebuild incrementally.
 
 ```bash
-plasmo-layout watch [options]
+npx plasmo-layout watch [options]
 
 Options:
   -c, --config <path>   Path to config file
@@ -138,7 +140,7 @@ Options:
 Remove all generated HTML files.
 
 ```bash
-plasmo-layout clean [options]
+npx plasmo-layout clean [options]
 
 Options:
   -c, --config <path>   Path to config file
@@ -152,7 +154,7 @@ Options:
 Create a default configuration file.
 
 ```bash
-plasmo-layout init [options]
+npx plasmo-layout init [options]
 
 Options:
   -r, --root <path>     Project root directory (default: cwd)
@@ -279,6 +281,49 @@ const watcher = await executeWatch(config, {
 // Later: stop watching
 await watcher.stop();
 ```
+
+## Troubleshooting
+
+### Command not found: plasmo-layout
+
+If you get `sh: plasmo-layout: command not found`, this usually means:
+
+1. **Using local installation incorrectly**: When installed as a dev dependency (`npm install --save-dev plasmo-layout`), you must use `npx`:
+   ```bash
+   npx plasmo-layout build
+   ```
+
+2. **Package not built**: Ensure the package is properly built and the `dist` folder exists:
+   ```bash
+   npm run build
+   ```
+
+3. **Missing in node_modules**: The package wasn't installed correctly:
+   ```bash
+   rm -rf node_modules package-lock.json
+   npm install
+   ```
+
+4. **Global installation**: If you prefer using `plasmo-layout` directly without `npx`, install globally:
+   ```bash
+   npm install -g plasmo-layout
+   ```
+
+### Package scripts alternative
+
+You can also add npm scripts to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "layout:build": "plasmo-layout build",
+    "layout:watch": "plasmo-layout watch",
+    "layout:clean": "plasmo-layout clean"
+  }
+}
+```
+
+Then run: `npm run layout:build`
 
 ## License
 
