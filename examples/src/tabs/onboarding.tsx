@@ -1,32 +1,33 @@
 /**
  * Example Plasmo tab component for onboarding
  * Uses nested layout path with dot notation
+ * This layout extends the default layout with gradient styling
  */
 
 // @layout('tabs.onboarding')
 
 export default function OnboardingTab() {
   return (
-    <div className="onboarding-container">
+    <>
       <h1>Welcome!</h1>
       <p>Let's get you started with our extension.</p>
       
       <div className="steps">
         <div className="step">
           <span className="step-number">1</span>
-          <span className="step-text">Pin the extension to your toolbar</span>
+          <span>Pin the extension to your toolbar</span>
         </div>
         <div className="step">
           <span className="step-number">2</span>
-          <span className="step-text">Configure your preferences</span>
+          <span>Configure your preferences in the options page</span>
         </div>
         <div className="step">
           <span className="step-number">3</span>
-          <span className="step-text">Start using the extension</span>
+          <span>Start using the extension!</span>
         </div>
       </div>
       
-      <button className="get-started-btn">Get Started</button>
-    </div>
+      <button className="btn-primary">Get Started</button>
+    </>
   );
 }
