@@ -8,6 +8,11 @@
   "bin": {
     "plasmo-layout": "./dist/cli/index.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "license": "MIT",
   "author": {
     "name": "Topazdom Technologies Limited",
