@@ -28,7 +28,8 @@
   </a>
 </p>
 
-> We're open to [technical consulting and engineering partnerships and contract opportunities](mailto://contact@topazdom.com). With Love ❤️ from Biafra.
+> We're open to [technical consulting and engineering partnerships and contract opportunities](mailto:contact@topazdom.com?cc=nzaghad@topazdom.com&subject=Request%20For%20Proposal%20-%20%5BPROJECT%20NAME%5D&body=Kindly%20provide%20the%20details%20of%20your%20project%20and%20your%20expected%20outcome%20or%20desired%20arrangement.%20Optionally%20Include%20Budget%20Details%2C%20if%20any.).
+> Initiated with Love ❤️ from Biafra.
 
 
 ## Overview
