@@ -1,3 +1,8 @@
+## <small>1.0.2 (2025-11-25)</small>
+
+* fix: update Node.js version and command shell in docker-compose ([43c9afa](https://github.com/topazdom/plasmo-layout/commit/43c9afa))
+* docs: update consulting opportunities description for clarity and completeness ([79294ae](https://github.com/topazdom/plasmo-layout/commit/79294ae))
+
 ## <small>1.0.1 (2025-11-25)</small>
 
 * fix: adjust indentation for layout decorator comments in test files ([3ffc50e](https://github.com/topazdom/plasmo-layout/commit/3ffc50e))
