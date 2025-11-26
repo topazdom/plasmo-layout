@@ -63,7 +63,7 @@
     "@babel/parser": "^7.23.0",
     "@babel/traverse": "^7.23.0",
     "chokidar": "^3.5.3",
-    "commander": "^11.1.0",
+    "commander": "^14.0.2",
     "consola": "^3.2.3",
     "fs-extra": "^11.2.0",
     "glob": "^10.3.10",
