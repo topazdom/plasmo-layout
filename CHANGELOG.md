@@ -1,3 +1,7 @@
+## <small>1.0.5 (2025-11-26)</small>
+
+* fix: include CHANGELOG.md in package files and ensure prepublish script runs build ([a283b8e](https://github.com/topazdom/plasmo-layout/commit/a283b8e))
+
 ## <small>1.0.4 (2025-11-26)</small>
 
 * docs: update README to clarify usage of npx for local installation and add troubleshooting section ([a56c028](https://github.com/topazdom/plasmo-layout/commit/a56c028))
