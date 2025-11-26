@@ -1,3 +1,8 @@
+## <small>1.0.4 (2025-11-26)</small>
+
+* docs: update README to clarify usage of npx for local installation and add troubleshooting section ([a56c028](https://github.com/topazdom/plasmo-layout/commit/a56c028))
+* fix: update package.json to include build files in the distribution ([a9c1910](https://github.com/topazdom/plasmo-layout/commit/a9c1910))
+
 ## <small>1.0.3 (2025-11-25)</small>
 
 * fix: add GH_TOKEN to release step for semantic-release ([afacd63](https://github.com/topazdom/plasmo-layout/commit/afacd63))
